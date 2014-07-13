@@ -70,24 +70,28 @@
 			<div class="row model">
 				<h2>Model View</h2>
 				<hr>
+				<div class="row"><h4>Select one</h4></div>
 
 				<div class="row data-model">
-				<div class="four columns"><div class="medium primary btn"><a href="#">Example Model</a></div></div>
-				<div class="four columns"><div class="medium primary btn"><a href="#" class="toggle" gumby-trigger=".eli">Smarter Housing</a></div></div>
-				<div class="four columns"><div class="medium primary btn"><a href="#">Affordable Housing</a></div></div>
+					<div class="four columns"><div class="medium primary btn"><a href="#" class="switch" gumby-trigger=".smarter | .affordable">Smarter</a></div></div>
+					<div class="four columns"><div class="medium primary btn"><a href="#" class="switch" gumby-trigger=".affordable | .smarter">Affordable</a></div></div>
 				</div>
 
-				<div class="row eli">
-				<h4>Extremely low income</h4>
-				<div class="six columns">
+				<div class="row smarter">
+					<h4>Extremely low income</h4>
+					<div class="six columns">
 	<label for="amount">% by income:</label> <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 	<div style="margin-top:10px;" id="percent-income-max"></div>
-				</div>
-				<div class="six	columns" style="margin-top:20px;">
+					</div>
+					<div class="six	columns" style="margin-top:20px;">
 	<label for="number"># house units:</label> <input type="text" id="number" readonly style="border:0; color:#f6931f; font-weight:bold;">
 	<div style="margin-top:10px;" id="housing-unit-max"></div>
+					</div>
 				</div>
+				<div class="row affordable">
+					<h4>Affordable</h4>
 				</div>
+				<div class="row empty"> </div>
 			</div>
 		</div>
 		<!-- DATAVIZ -->

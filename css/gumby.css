@@ -1696,6 +1696,8 @@ h4 { font-size: 16px; font-weight: 600; }
 
 hr { margin: 10px 0px; }
 
-.eli { display: none; }
+.example, .smarter, .affordable { display: none; }
 
-@media only screen and (min-width: 768px) { .active { display: inherit !important; } }
+.active { display: block; }
+
+.data-model .columns { margin-bottom: 10px; }
